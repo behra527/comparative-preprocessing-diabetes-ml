@@ -86,10 +86,10 @@ Only the preprocessing or imbalance-handling strategy changes between experiment
 
 | Experiment        | Imputation | Scaling        | Imbalance Handling |
 | ----------------- | ---------- | -------------- | ------------------ |
-| E0 — Baseline     | Median     | No             | None               |
-| E1 — Scaling      | Median     | StandardScaler | None               |
-| E2 — SMOTE        | Median     | StandardScaler | SMOTE              |
-| E3 — Class Weight | Median     | StandardScaler | Class Weight       |
+| E0  Baseline      | Median     | No             | None               |
+| E1  Scaling       | Median     | StandardScaler | None               |
+| E2 SMOTE          | Median     | StandardScaler | SMOTE              |
+| E3  Class Weight  | Median     | StandardScaler | Class Weight       |
 
 All preprocessing operations are implemented using pipelines to reduce the risk of data leakage.
 
@@ -121,10 +121,10 @@ Because this is a clinical classification problem, particular attention is given
 
 | Experiment        |   Accuracy |  Precision |     Recall |         F1 | ROC-AUC |     PR-AUC |
 | ----------------- | ---------: | ---------: | ---------: | ---------: | ------: | ---------: |
-| E0 — Baseline     |     70.13% |     58.70% |     50.00% |     54.00% |  0.8130 |     0.6723 |
-| E1 — Scaling      |     70.78% |     60.00% |     50.00% |     54.55% |  0.8130 |     0.6733 |
-| E2 — SMOTE        |     70.78% |     57.38% |     64.81% |     60.87% |  0.8113 | **0.6758** |
-| E3 — Class Weight | **73.38%** | **60.32%** | **70.37%** | **64.96%** |  0.8126 |     0.6727 |
+| E0   Baseline     |     70.13% |     58.70% |     50.00% |     54.00% |  0.8130 |     0.6723 |
+| E1   Scaling      |     70.78% |     60.00% |     50.00% |     54.55% |  0.8130 |     0.6733 |
+| E2   SMOTE        |     70.78% |     57.38% |     64.81% |     60.87% |  0.8113 | **0.6758** |
+| E3   Class Weight | **73.38%** | **60.32%** | **70.37%** | **64.96%** |  0.8126 |     0.6727 |
 
 ---
 
@@ -169,10 +169,10 @@ Compared with the baseline, diabetic recall improved by **20.37 percentage point
 
 | Experiment        | TN | FP | FN | TP |
 | ----------------- | -: | -: | -: | -: |
-| E0 — Baseline     | 81 | 19 | 27 | 27 |
-| E1 — Scaling      | 82 | 18 | 27 | 27 |
-| E2 — SMOTE        | 74 | 26 | 19 | 35 |
-| E3 — Class Weight | 75 | 25 | 16 | 38 |
+| E0   Baseline     | 81 | 19 | 27 | 27 |
+| E1   Scaling      | 82 | 18 | 27 | 27 |
+| E2   SMOTE        | 74 | 26 | 19 | 35 |
+| E3   Class Weight | 75 | 25 | 16 | 38 |
 
 The E3 configuration identifies **38 of 54 diabetic cases**, compared with only **27 of 54** detected by the baseline.
 
